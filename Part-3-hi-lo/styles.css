@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #06964e;
+}
+
+#gameContainer {
+    text-align: center;
+}
+
+#cardDisplay {
+    display:block;
+    width: 150px;
+    transform-origin: center bottom;
+    position:relative;
+    margin:auto;
+}
+
+.rotated-card {
+    position: absolute;
+    transform: translateX(-50%) rotate(calc(-35deg + var(--rotation, 0deg));
+    transition: transform 0.5s ease-in-out;
+}
+
+#factContainer {
+    text-align: center;
+    margin-bottom: 20px; /* Add margin here */
+}
+
+#factText {
+    font-size: 18px;
+    color: #fff;
+}
+
+#resultText {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#highLowButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Add margin here */
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+}

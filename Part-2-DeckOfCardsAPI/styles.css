@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: darkgreen
+}
+
+#cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#drawCardButton {
+    margin-bottom: 20px;
+}
+
+#cardDisplay {
+    width: 150px;
+    transform-origin: center bottom;
+}
+
+.rotated-card {
+    width: 150px;
+    transform: translateX(-50%) rotate(calc(-35deg + var(--rotation, 0deg));
+    transition: transform 0.5s ease-in-out;
+}

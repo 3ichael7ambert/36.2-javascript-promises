@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #06964e;
+}
+
+#gameContainer {
+    text-align: center;
+    color: #fff;
+}
+
+#cardContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    margin: 5px;
+    display: inline-block;
+    background-size: contain; /* Fit the image within the container */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#resultText {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
